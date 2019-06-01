@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Пробный</title>
+    </head>
+    <body>
+<h3>Первое число:
+</br>
+<input type="number" id="obj1" value="0.1" ></input></h3>
+</br>
+
+<h3>Второе число:
+</br>
+<input type="number" id="obj2" value="0.2" ></input></h3>
+
+<button onclick="func()">Сложить</button>
+
+<script>
+
+function func()
+{
+var obj1 = document.getElementById("obj1");
+var obj2 = document.getElementById("obj2");
+var num1 = Math.round(Number(obj1.value)*1000000000000);
+var num2 = Math.round(Number(obj2.value)*1000000000000);
+var sum = (num1+num2)/1000000000000;
+alert(sum);
+}
+
+</script>   
+
+    </body>
+
+</html>
